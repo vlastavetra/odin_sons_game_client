@@ -3,6 +3,66 @@ import Link from 'next/link'
 import Title from '@/components/elements/title.element'
 import Button from '@/components/elements/button.element'
 import Resources from './resources.section'
+import Navigation from '@/components/widgets/navigation/navigation.widget'
+
+const headerNav = {
+	'left': {
+		list: [
+			{
+				id: 'hnl1',
+				icon: 'MapSvg',
+				text: 'Персонализация',
+				link: '/',
+			},
+			{
+				id: 'hnl2',
+				icon: 'MapSvg',
+				text: 'Друзья',
+				link: '/',
+			},
+			{
+				id: 'hnl3',
+				icon: 'MapSvg',
+				text: 'Рейтинги',
+				link: '/',
+			},
+
+		],
+		function: {
+			icon: 'ArrowBackSvg',
+			text: 'Сменить профиль',
+			function: 'ChangeProfile',
+		}
+	},
+	'right': {
+		list: [
+			{
+				id: 1,
+				icon: 'MapSvg',
+				text: 'Сюжетная компания',
+				link: '/',
+			},
+			{
+				id: 1,
+				icon: 'MapSvg',
+				text: 'Сюжетная компания',
+				link: '/',
+			},
+			{
+				id: 1,
+				icon: 'MapSvg',
+				text: 'Сюжетная компания',
+				link: '/',
+			},
+		],
+		function: {
+			icon: 'ArrowBackSvg',
+			text: 'Вернуться назад',
+			function: 'Error',
+		},
+		info: 'Версия: 4.9.1  Клиент: 78909321'
+	}
+}
 
 const styles =
 	`w-full flex justify-between items-center
@@ -17,10 +77,11 @@ export default function Header({ title, page }: { title?: string, page?: string 
 			</Link>
 			{page !== 'main' &&
 				<div className='flex gap-2'>
-					<Button style='gray' tag='button' icon='UserSvg' />
+					<Navigation content={headerNav.left} type='top-left' icon='UserSvg' />
 					<Resources />
-					<Button style='gray' tag='button' icon='MenuSvg' />
-				</div>}
+					<Navigation content={headerNav.right} type='top-right' icon='MenuSvg' />
+				</div>
+			}
 			{title && <Title
 				className='text-center'
 				content={title}

@@ -1,3 +1,5 @@
+import classNames from 'classnames'
+
 interface TitleProps {
   content: string
   tag: keyof JSX.IntrinsicElements
@@ -12,8 +14,7 @@ const styles: { [key: string]: string } = {
 
 export default function Title({ content, tag: Tag, style, className }: TitleProps) {
   return (
-    <Tag
-      className={`${styles[style]}, ${className}`}>
+    <Tag className={classNames([styles[style], '', className])}>
       {content}
     </Tag>
   )

@@ -1,28 +1,60 @@
-'use client'
+import Navigation from '@/components/widgets/navigation/navigation.widget'
 
-import { useRouter } from 'next/navigation'
-import Button from '@/components/elements/button.element'
-
+const footerNav = {
+	'left': {
+		title: 'Быстрый переход',
+		list: [
+			{
+				id: 1,
+				icon: 'MapSvg',
+				text: 'Сюжетная компания',
+				link: '/',
+			},
+			{
+				id: 2,
+				icon: 'GlobeSvg',
+				text: 'Сетевая игра',
+				link: '/',
+			},
+			{
+				id: 3,
+				icon: 'CartSvg',
+				text: 'Магазин',
+				link: '/',
+			},
+			{
+				id: 4,
+				icon: 'FlagSvg',
+				text: 'Достижения',
+				link: '/',
+			},
+			{
+				id: 5,
+				icon: 'BookSvg',
+				text: 'Обучение',
+				link: '/',
+			},
+		],
+		function: {
+			icon: 'ArrowBackSvg',
+			text: 'Вернуться назад',
+			function: 'Back',
+		}
+	},
+	'right': {
+		title: 'Онлайн',
+		title2: 'Не в сети',
+	}
+}
 const styles =
-	`w-full flex justify-between items-center
-	py-8 px-10
-	align-self: flex-start`
+	`w-full flex justify-between items-center align-self: flex-end
+	py-8 px-10`
 
 export default function Footer() {
-	const router = useRouter()
-
-	const handleBackClick = () => {
-		router.back()
-	}
-
-	const handleReportClick = () => {
-		console.log('report')
-	}
-
 	return (
 		<footer className={styles}>
-			<Button style='gray' tag='button' icon='CompassSvg' onClick={handleBackClick} />
-			<Button style='gray' tag='button' icon='UsersSvg' onClick={handleReportClick} />
+			<Navigation content={footerNav.left} type='bottom-left' icon='CompassSvg' />
+			<Navigation content={footerNav.right} type='bottom-right' icon='UsersSvg' />
 		</footer>
 	)
 }

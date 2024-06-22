@@ -17,7 +17,7 @@ export default function Resources() {
 	return (
 		<div className='flex gap-3 items-center'>
 			{content.map((item) => (
-				<div className='relative w-[180px] flex items-center bg-d-dark-gray rounded-md p-1'>
+				<div className='relative w-[180px] h-[60px] flex items-center bg-d-dark-gray rounded-md p-1'>
 					<Text className='absolute -top-[25px] left-2/4 -translate-x-1/2 opacity-50' content={item.text} tag='span' style='copy-1' />
 					<Image src={item.icon} alt={item.text} width={40} height={40} />
 					<span>
@@ -30,4 +30,4 @@ export default function Resources() {
 			))}
 		</div>
 	)
-}
+}  

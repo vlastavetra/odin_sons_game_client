@@ -10,7 +10,6 @@ const styles =
 
 export default async function Boards() {
 	const data: BoardsData = await fetchBoardListData()
-	console.log(data)
 	return (
 		<div className={styles}>
 			<div className='flex justify-between mb-20'>

@@ -21,6 +21,7 @@ const config: Config = {
     },
     colors: {
       'd-black': '#191C22',
+      'd-black-2': '#1E2229',
       'd-white': '#DADCE0',
       'd-gray': '#D9D9D9',
       'd-dark-gray': '#2A3139',
@@ -43,7 +44,9 @@ const config: Config = {
       },
       transitionTimingFunction: {},
       gridTemplateColumns: {},
-      boxShadow: {},
+      boxShadow: {
+        'xl': '0px 10px 40px rgba(25, 28, 34, 0.5)',
+      },
       backgroundImage: {},
       animation: {},
       keyframes: {}

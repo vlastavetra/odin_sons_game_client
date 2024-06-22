@@ -10,7 +10,7 @@ export default async function BoardsPage() {
     <>
       <Header title='Сетевая игра' />
       <MainHOC>
-        <div className='w-full grid grid-cols-[32.5%_64.5%] gap-5 mb-20'>
+        <div className='w-full flex justify-between gap-5 mb-20'>
           <HeroCard />
           <Boards />
         </div>
