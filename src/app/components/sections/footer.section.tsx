@@ -1,8 +1,7 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import { ArrowSvg, MessageSvg } from '@/components/elements/icon.element'
-import Text from '@/components/elements/text.element'
+import Button from '@/components/elements/button.element'
 
 const styles =
 	`w-full flex justify-between items-center
@@ -22,20 +21,8 @@ export default function Footer() {
 
 	return (
 		<footer className={styles}>
-			<button
-				onClick={handleBackClick}
-				className='px-4 py-2 bg-gray-800 text-white rounded mb-5 flex gap-1'
-			>
-				<ArrowSvg />
-				<Text className='opacity-50 font-gilroy' content='Назад' style='copy-1' tag='span' />
-			</button>
-			<button
-				onClick={handleReportClick}
-				className='px-4 py-2 bg-gray-800 text-white rounded mb-5 flex gap-1'
-			>
-				<Text className='opacity-50 font-gilroy' content='Сообщить об ошибке' style='copy-1' tag='span' />
-				<MessageSvg />
-			</button>
+			<Button style='gray' tag='button' icon='CompassSvg' onClick={handleBackClick} />
+			<Button style='gray' tag='button' icon='UsersSvg' onClick={handleReportClick} />
 		</footer>
 	)
 }

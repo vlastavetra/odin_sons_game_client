@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Title from '@/components/elements/title.element'
+import Button from '@/components/elements/button.element'
 import Resources from './resources.section'
 
 const styles =
@@ -14,15 +15,12 @@ export default function Header({ title, page }: { title?: string, page?: string 
 			<Link href='/'>
 				<Image src='/logo.svg' alt='Logo' width={121.67} height={100} />
 			</Link>
-			{page !== 'main' && <div>
-				<button>
-
-				</button>
-				<Resources />
-				<button>
-
-				</button>
-			</div>}
+			{page !== 'main' &&
+				<div className='flex gap-2'>
+					<Button style='gray' tag='button' icon='UserSvg' />
+					<Resources />
+					<Button style='gray' tag='button' icon='MenuSvg' />
+				</div>}
 			{title && <Title
 				className='text-center'
 				content={title}
