@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Galaktika';
+  font-weight: 400;
+  src: url('/fonts/Galaktika.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'RTG';
+  font-weight: 500;
+  src: url('/fonts/Radomir-Tinkov-Gilroy-Regular.otf') format('opentype');
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #191C22;
+  color: #DADCE0;
+  font-family: 'RTG';
+  font-weight: 500;
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #c4c5d0 transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 100px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #c4c5d0;
+    border-radius: 100px;
+  }
+}

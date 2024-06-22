@@ -1,0 +1,54 @@
+{
+  "games": [
+    {
+      "id": "holmgang",
+      "name": "Хольмганг",
+      "soloGame": true,
+      "playersCountinGame": 2,
+      "text": "Сразитесь один на один и заберите всю награду себе",
+      "playersOnline": 40,
+      "gameActive": false,
+      "cover": "/games/holmgang.png"
+    },
+    {
+      "id": "ultra-holmgang",
+      "name": "Ультра-Хольмганг",
+      "soloGame": true,
+      "playersCountinGame": 3,
+      "text": "Сразитесь с тремя викингами, больше соперников и выше ставки",
+      "playersOnline": 93,
+      "gameActive": false,
+      "cover": "/games/ultra-holmgang.png"
+    },
+    {
+      "id": "ragnarek",
+      "name": "Рагнарек",
+      "soloGame": true,
+      "playersCountinGame": 4,
+      "text": "Примите участие в эпичном сражении четырех викингов",
+      "playersOnline": 942,
+      "gameActive": true,
+      "cover": "/games/ragnarek.png"
+    },
+    {
+      "id": "hird",
+      "name": "Хирд",
+      "soloGame": false,
+      "playersCountinGame": 4,
+      "text": "Испытайте свою силу в клановых сражениях два на два",
+      "playersOnline": 34,
+      "gameActive": false,
+      "cover": "/games/hird.png"
+    },
+    {
+      "id": "naglfar",
+      "name": "Нагльфар",
+      "soloGame": false,
+      "playersCountinGame": 2,
+      "text": "Призовите на помощь викинга и сразитесь против босса",
+      "playersOnline": 235,
+      "gameActive": false,
+      "cover": "/games/naglfar.png"
+    }
+  ]
+}

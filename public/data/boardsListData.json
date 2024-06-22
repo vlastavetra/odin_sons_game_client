@@ -1,0 +1,76 @@
+{
+  "boards": [
+    {
+      "boardId": "1",
+      "name": "Стол 1",
+      "owner": "Winasmana",
+      "location": "Йотунхейм",
+      "bid": "100",
+      "playersTotal": "4",
+      "playersOnline": "3"
+    },
+    {
+      "boardId": "2",
+      "name": "Стол 2",
+      "owner": "Chellimo",
+      "location": "Нифльхейм",
+      "bid": "500",
+      "playersTotal": "4",
+      "playersOnline": "1"
+    },
+    {
+      "boardId": "3",
+      "name": "Стол 3",
+      "owner": "Ragwiarie",
+      "location": "Нидавеллир",
+      "bid": "800",
+      "playersTotal": "4",
+      "playersOnline": "3"
+    },
+    {
+      "boardId": "4",
+      "name": "Стол 4",
+      "owner": "Xannden",
+      "location": "Асгард",
+      "bid": "300",
+      "playersTotal": "4",
+      "playersOnline": "2"
+    },
+    {
+      "boardId": "5",
+      "name": "Стол 1",
+      "owner": "Winasmana",
+      "location": "Йотунхейм",
+      "bid": "100",
+      "playersTotal": "4",
+      "playersOnline": "3"
+    },
+    {
+      "boardId": "6",
+      "name": "Стол 2",
+      "owner": "Chellimo",
+      "location": "Нифльхейм",
+      "bid": "500",
+      "playersTotal": "4",
+      "playersOnline": "1"
+    },
+    {
+      "boardId": "7",
+      "name": "Стол 3",
+      "owner": "Ragwiarie",
+      "location": "Нидавеллир",
+      "bid": "800",
+      "playersTotal": "4",
+      "playersOnline": "3"
+    },
+    {
+      "boardId": "8",
+      "name": "Стол 4",
+      "owner": "Xannden",
+      "location": "Асгард",
+      "bid": "300",
+      "playersTotal": "4",
+      "playersOnline": "2"
+    }
+  ]
+}
